@@ -9,7 +9,7 @@ int main() {
 
     int npt1, npt2;
     unsigned long int populacao1, populacao2;
-    char nomedacidade1[20], nomedacidade2[20], estado1[20], estado2[20], codigodacarta1, codigodacarta2;
+    char nomedacidade1[20], nomedacidade2[20], estado1[20], estado2[20];
     float area1, area2, pib1, pib2;
     char codigodac1, codigodac2;
 
@@ -43,7 +43,7 @@ int main() {
     scanf("%lu", &populacao2);
     printf("Digite o pib: \n");
     scanf("%f", &pib2);
-    printf("Digite a área: \n", area2);
+    printf("Digite a área: \n");
     scanf("%f", &area2);
     printf("Digite o número de pontos turisticos: \n");
     scanf("%d", &npt2);
@@ -106,10 +106,10 @@ int main() {
         printf("A densidade da carta 2 é superior à carta 1\n");
     }
     if (pibpct1 > pibpct2)
-    {printf("O PIB per capta da carta 1 é superior à carta 2\n");
+    {printf("O PIB per capita da carta 1 é superior à carta 2\n");
         /* code */
     }else{
-        printf("O PIB per capta da carta 2 é superior à carta 1\n");
+        printf("O PIB per capita da carta 2 é superior à carta 1\n");
     }
     
     
