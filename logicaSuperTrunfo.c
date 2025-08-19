@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 // Desafio Super Trunfo - Países
 // Tema 2 - Comparação das Cartas
@@ -77,30 +79,65 @@ int main() {
 
     int escolhaj1, escolhaj2;
     printf("Você deve escolher um dos atributos!\n");
-    printf("População = 1.\nPIB = 2.\nÁrea = 3.\nPontos turísticos = 4.\nDensidade populacional = 5")
+    printf("População = 1.\nPIB = 2.\nÁrea = 3.\nPontos turísticos = 4.\nDensidade populacional = 5");
     scanf("%d", &escolhaj1);
 
   switch (escolhaj1)
   {
   case 1:
-    printf("Jogador 1: População - ");
+    printf("Jogador 1: População - Jogador 2: População\n");
     break;
     case 2:
-    printf("Jogador 1: PIB - ");
+    printf("Jogador 1: PIB - Jogador 2: PIB\n");
     break;
     case 3:
-    printf("Jogador 1: Área - ");
+    printf("Jogador 1: Área - Jogador: Área\n");
     break;
     case 4:
-    printf("Jogador 1: Número de pontos turísticos - ");
+    printf("Jogador 1: Número de pontos turísticos - Jogador 2: Número de pontos turísticos\n");
     break;
     case 5:
-    printf("Jogador 1: Densidade populacional - ");
+    printf("Jogador 1: Densidade populacional - Jogador 2: Densidade populacional\n");
     break;
   
   default:
   printf("Escolha invalida!!")
     break;
+    if (escolhaj1 == 1 && populacao1 > populacao2)
+    {
+        printf("Carta 1 venceu!");
+    }else if (escolhaj1 == 1 && populacao1 < populacao2)
+    {
+        printf("Carta 2 venceu!!");
+    }else if (escolhaj1 == 2 && pib1 < pib2)
+    {
+        printf("Carta 2 venceu!!");
+    }else if (escolhaj1 == 2 && pib1 > pib2)
+    {
+        printf("Carta 1 venceu!!");
+    }else if (escolhaj1 == 3 && area1 < area2)
+    {
+        printf("Carta 2 venceu!!");
+    }else if (escolhaj1 == 3 && area1 > area2)
+    {
+        printf("Carta 1 venceu!!");
+    }else if (escolhaj1 == 4 && npt1 < npt2)
+    {
+        printf("Carta 2 venceu!!");
+    }else if (escolhaj1 == 4 && npt1 > npt2)
+    {
+        printf("Carta 1 venceu!!");
+    }else if (escolhaj1 == 5 && densidade1 < densidade2)
+    {
+        printf("Carta 1 venceu!!");
+    }else if (escolhaj1 == 5 && densidade1 > densidade2)
+    {
+        printf("Carta 2 venceu!!");
+    }else{
+        printf("EMPATE!!");
+    }
+    
+    
   }
     
     
