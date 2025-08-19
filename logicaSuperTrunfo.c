@@ -75,42 +75,33 @@ int main() {
     printf("Densidade populacional: %.2f\n", densidade2);
     printf("PIB per capta: %.2f\n", pibpct2);
 
-    if (populacao1 > populacao2)
-    {printf("População da carta 1 é superior à carta 2\n");
-        /* code */
-    }else{
-        printf("População da carta 2 é superior à carta 1\n");
-    }
-    if (pib1 > pib2)
-    {printf("O PIB da carta 1 é superior à carta 2\n");
-        /* code */
-    }else{
-        printf("O PIB da carta 2 é superior à carta 1\n");
-    }
-    if (area1 > area2)
-    {printf("A área da carta 1 é superior à carta 2\n");
-        /* code */
-    }else{
-        printf("A área da carta 2 é superior à carta 1\n");
-    }
-    if (npt1 > npt2)
-    {printf("O número de pontos turísticos da carta 1 é superior à carta 2\n");
-        /* code */
-    }else{
-        printf("O número de pontos turísticos da carta 2 é superior à carta 1\n");
-    }
-    if (densidade1 > densidade2)
-    {printf("A densidade da carta 1 é superior à carta 2\n");
-        /* code */
-    }else{
-        printf("A densidade da carta 2 é superior à carta 1\n");
-    }
-    if (pibpct1 > pibpct2)
-    {printf("O PIB per capita da carta 1 é superior à carta 2\n");
-        /* code */
-    }else{
-        printf("O PIB per capita da carta 2 é superior à carta 1\n");
-    }
+    int escolhaj1, escolhaj2;
+    printf("Você deve escolher um dos atributos!\n");
+    printf("População = 1.\nPIB = 2.\nÁrea = 3.\nPontos turísticos = 4.\nDensidade populacional = 5")
+    scanf("%d", &escolhaj1);
+
+  switch (escolhaj1)
+  {
+  case 1:
+    printf("Jogador 1: População - ");
+    break;
+    case 2:
+    printf("Jogador 1: PIB - ");
+    break;
+    case 3:
+    printf("Jogador 1: Área - ");
+    break;
+    case 4:
+    printf("Jogador 1: Número de pontos turísticos - ");
+    break;
+    case 5:
+    printf("Jogador 1: Densidade populacional - ");
+    break;
+  
+  default:
+  printf("Escolha invalida!!")
+    break;
+  }
     
     
 
